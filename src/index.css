@@ -1,0 +1,36 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Volkhov:wght@400;700&display=swap');
+
+@theme {
+  /* Fonts */
+  --font-sans: 'Poppins', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-heading: 'Volkhov', serif;
+
+  /* Colors */
+  --color-primary: #DF6951;
+  --color-secondary: #F1A501;
+  --color-accent: #006380;
+  --color-dark: #14183E;
+  --color-text: #5E6282;
+  --color-text-light: #848484;
+  --color-white: #FFFFFF;
+
+  /* Spacing */
+  --spacing-section: 120px;
+
+  /* Border Radius */
+  --radius-small: 5px;
+  --radius-medium: 20px;
+  --radius-large: 30px;
+}
+
+body {
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  color: var(--color-text);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  color: var(--color-dark);
+}
