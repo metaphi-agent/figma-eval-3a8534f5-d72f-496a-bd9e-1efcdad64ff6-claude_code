@@ -1,0 +1,53 @@
+{
+  "colors": {
+    "primary": {
+      "orange": "#DF6951",
+      "yellow": "#F1A501"
+    },
+    "text": {
+      "heading": "#14183E",
+      "body": "#5E6282",
+      "dark": "#212832"
+    },
+    "background": {
+      "white": "#FFFFFF",
+      "light": "#DFBEE4",
+      "cream": "#FFF1DA"
+    },
+    "accent": {
+      "purple": "#6246E5",
+      "lightPurple": "#8A79EC"
+    }
+  },
+  "typography": {
+    "fontFamilies": {
+      "heading": "Volkhov",
+      "body": "Poppins",
+      "navigation": "Google Sans",
+      "detail": "Open Sans"
+    },
+    "sizes": {
+      "heroHeading": "84px",
+      "sectionHeading": "50px",
+      "cardTitle": "20px",
+      "bodyText": "16px",
+      "smallText": "14px",
+      "navItem": "17px"
+    }
+  },
+  "spacing": {
+    "containerPadding": "140px",
+    "sectionGap": "100px",
+    "cardGap": "32px"
+  },
+  "borderRadius": {
+    "small": "5px",
+    "medium": "10px",
+    "large": "24px",
+    "xl": "36px"
+  },
+  "shadows": {
+    "card": "0 100px 80px rgba(0,0,0,0.02), 0 64px 47px rgba(0,0,0,0.015)",
+    "button": "0 15px 30px rgba(223,105,81,0.3)"
+  }
+}
