@@ -1,48 +1,24 @@
 const partners = [
-  {
-    name: 'Axon',
-    logo: './assets/images/partner-axon.png',
-  },
-  {
-    name: 'Jetstar',
-    logo: './assets/images/partner-jetstar.png',
-  },
-  {
-    name: 'Expedia',
-    logo: './assets/images/partner-expedia.png',
-    highlight: true,
-  },
-  {
-    name: 'Qantas',
-    logo: './assets/images/partner-qantas.png',
-  },
-  {
-    name: 'Alitalia',
-    logo: './assets/images/partner-alitalia.png',
-  },
+  { image: './assets/images/logo-axon.png', name: 'Axon' },
+  { image: './assets/images/logo-jetstar.png', name: 'Jetstar' },
+  { image: './assets/images/logo-expedia.png', name: 'Expedia' },
+  { image: './assets/images/logo-qantas.png', name: 'Qantas' },
+  { image: './assets/images/logo-alitalia.png', name: 'Alitalia' },
 ];
 
 export default function Partners() {
   return (
-    <section className="py-16">
-      <div className="max-w-[1200px] mx-auto px-6">
-        <div className="flex flex-wrap items-center justify-center gap-8 lg:gap-16">
+    <section className="w-full px-6 lg:px-[186px] py-12">
+      <div className="max-w-[1440px] mx-auto">
+        <div className="flex flex-wrap items-center justify-center lg:justify-between gap-8 lg:gap-16 grayscale opacity-70">
           {partners.map((partner, index) => (
-            <div
+            <img
               key={index}
-              className={`flex items-center justify-center transition-all duration-300 ${
-                partner.highlight
-                  ? 'bg-white p-6 rounded-[10px] shadow-[0_100px_80px_rgba(0,0,0,0.02),0_64px_47px_rgba(0,0,0,0.015),0_20px_13px_rgba(0,0,0,0.01)]'
-                  : 'grayscale hover:grayscale-0'
-              }`}
-            >
-              <img
-                src={partner.logo}
-                alt={partner.name}
-                loading="lazy"
-                className="h-12 lg:h-16 w-auto object-contain"
-              />
-            </div>
+              src={partner.image}
+              alt={partner.name}
+              loading="lazy"
+              className="h-8 lg:h-10 w-auto object-contain hover:grayscale-0 hover:opacity-100 transition-all duration-300"
+            />
           ))}
         </div>
       </div>

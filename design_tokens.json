@@ -1,53 +1,100 @@
 {
   "colors": {
     "primary": {
-      "orange": "#DF6951",
-      "yellow": "#F1A501"
+      "dark": "#14183E",
+      "coral": "#DF6951",
+      "orange": "#F1A501"
+    },
+    "secondary": {
+      "purple": "#6246E5",
+      "lightPurple": "#8B79E6"
     },
     "text": {
-      "heading": "#14183E",
-      "body": "#5E6282",
-      "dark": "#212832"
+      "dark": "#181E4B",
+      "gray": "#5E6282",
+      "light": "#1E1D4C"
     },
     "background": {
       "white": "#FFFFFF",
-      "light": "#DFBEE4",
-      "cream": "#FFF1DA"
+      "cream": "#FFF1DA",
+      "lightPurple": "#DFD7F9",
+      "gray": "#DEE1E6"
     },
     "accent": {
-      "purple": "#6246E5",
-      "lightPurple": "#8A79EC"
+      "coral": "#DF6951",
+      "orange": "#F1A501",
+      "orangeGradient": "linear-gradient(180deg, #FF946D 0%, #FF7D68 100%)"
     }
   },
   "typography": {
     "fontFamilies": {
       "heading": "Volkhov",
       "body": "Poppins",
-      "navigation": "Google Sans",
-      "detail": "Open Sans"
+      "nav": "Google Sans",
+      "card": "Open Sans"
     },
-    "sizes": {
-      "heroHeading": "84px",
-      "sectionHeading": "50px",
-      "cardTitle": "20px",
-      "bodyText": "16px",
-      "smallText": "14px",
-      "navItem": "17px"
+    "fontSizes": {
+      "hero": "84px",
+      "h1": "50px",
+      "h2": "33px",
+      "h3": "20px",
+      "body": "16px",
+      "small": "14px",
+      "nav": "17px"
+    },
+    "fontWeights": {
+      "bold": 700,
+      "semibold": 600,
+      "medium": 500,
+      "regular": 400
+    },
+    "lineHeights": {
+      "hero": "89px",
+      "heading": "1.3",
+      "body": "1.875"
     }
   },
   "spacing": {
-    "containerPadding": "140px",
+    "containerPadding": "186px",
     "sectionGap": "100px",
-    "cardGap": "32px"
+    "cardGap": "40px",
+    "itemGap": "16px"
   },
   "borderRadius": {
-    "small": "5px",
-    "medium": "10px",
-    "large": "24px",
-    "xl": "36px"
+    "button": "10px",
+    "card": "24px",
+    "cardSmall": "36px",
+    "input": "10px"
   },
   "shadows": {
-    "card": "0 100px 80px rgba(0,0,0,0.02), 0 64px 47px rgba(0,0,0,0.015)",
-    "button": "0 15px 30px rgba(223,105,81,0.3)"
+    "card": "0px 100px 80px rgba(0, 0, 0, 0.02), 0px 64.81px 46.85px rgba(0, 0, 0, 0.015), 0px 38.52px 25.48px rgba(0, 0, 0, 0.012), 0px 20px 13px rgba(0, 0, 0, 0.01)"
+  },
+  "components": {
+    "button": {
+      "primary": {
+        "background": "#F1A501",
+        "text": "#FFFFFF",
+        "borderRadius": "10px",
+        "padding": "16px 24px"
+      },
+      "secondary": {
+        "background": "transparent",
+        "border": "1px solid #212832",
+        "text": "#212832",
+        "borderRadius": "10px"
+      }
+    },
+    "card": {
+      "service": {
+        "background": "#FFFFFF",
+        "borderRadius": "36px",
+        "shadow": "card"
+      },
+      "destination": {
+        "background": "#FFFFFF",
+        "borderRadius": "24px",
+        "shadow": "card"
+      }
+    }
   }
 }

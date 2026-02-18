@@ -1,58 +1,45 @@
 @import "tailwindcss";
 
-/* Import Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Volkhov:wght@400;700&display=swap');
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Volkhov:wght@400;700&family=Open+Sans:wght@400;600&family=Montserrat:wght@400;500&display=swap');
 
-/* Design tokens from Figma */
+/* Design tokens extracted from Figma */
 @theme {
-  --font-heading: 'Volkhov', serif;
-  --font-body: 'Poppins', sans-serif;
+  /* Font families */
+  --font-sans: 'Poppins', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-heading: 'Volkhov', Georgia, serif;
+  --font-card: 'Open Sans', sans-serif;
+  --font-montserrat: 'Montserrat', sans-serif;
 
   /* Colors */
-  --color-primary-orange: #DF6951;
-  --color-primary-yellow: #F1A501;
-  --color-text-heading: #14183E;
-  --color-text-body: #5E6282;
-  --color-text-dark: #212832;
-  --color-bg-light: #FFF1DA;
-  --color-bg-cream: #FFF8F1;
+  --color-primary-dark: #14183E;
+  --color-primary-coral: #DF6951;
+  --color-primary-orange: #F1A501;
+
+  --color-text-dark: #181E4B;
+  --color-text-gray: #5E6282;
+  --color-text-nav: #212832;
+
+  --color-bg-cream: #FFF1DA;
+  --color-bg-light-purple: #DFD7F9;
+
   --color-accent-purple: #6246E5;
-  --color-accent-light-purple: #8A79EC;
+  --color-accent-coral: #DF6951;
 
-  /* Spacing */
-  --container-padding: 140px;
-  --section-gap: 100px;
-}
-
-html {
-  scroll-behavior: smooth;
+  /* Shadows */
+  --shadow-card: 0px 100px 80px rgba(0, 0, 0, 0.02), 0px 64.81px 46.85px rgba(0, 0, 0, 0.015), 0px 38.52px 25.48px rgba(0, 0, 0, 0.012), 0px 20px 13px rgba(0, 0, 0, 0.01);
 }
 
 body {
-  font-family: var(--font-body);
+  font-family: var(--font-sans);
   -webkit-font-smoothing: antialiased;
-  color: var(--color-text-body);
+  color: var(--color-text-gray);
 }
 
-h1, h2, h3, h4, h5, h6 {
+.font-heading {
   font-family: var(--font-heading);
-  color: var(--color-text-heading);
 }
 
-/* Custom scrollbar */
-::-webkit-scrollbar {
-  width: 8px;
-}
-
-::-webkit-scrollbar-track {
-  background: #f1f1f1;
-}
-
-::-webkit-scrollbar-thumb {
-  background: #c1c1c1;
-  border-radius: 4px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: #a1a1a1;
+.font-card {
+  font-family: var(--font-card);
 }
